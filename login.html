@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>Login Form</title>
+        <style>
+            body{
+                background-image: url(nature.png);
+                background-size:cover;
+                margin:0;
+                padding:0;
+            }
+            .container{
+                top:50%;
+                left:50%;
+                position:absolute;
+                transform:translate(-50%,-50%);
+            }
+            .card{
+                padding:60px 40px 50px 40px;
+                background:black;
+                border-bottom:1px solid white;
+                border-radius:15px;
+            }
+            #name{
+                width:200px;
+                border:none;
+                background:transparent;
+                border-bottom:1px solid white;
+                padding:6px;
+                margin-bottom:20px;
+                color:white;
+            }
+            #button{
+                border-radius:20px;
+                padding:10px 20px;
+                background:dodgerblue;
+                color:white;
+                margin-top:20px;
+                border:none;
+                outline:none;
+                margin-left:50px;
+            }
+            a{
+                font-size:13px;
+            }
+            img{
+                border-radius:50%;
+                position:absolute;
+                margin-left:100px;
+                margin-top:-40px;
+            }
+            #button:hover{
+                background-color:greenyellow;
+                color:black;
+                cursor:pointer;
+            }
+            #button{
+                margin-top:50px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <img src="image2.jpg" heigth="70" width="70">
+            <div class="card">
+                <input type="text" placeholder="Email" id="name" required><br>
+                <input type="password" placeholder="Password" id="name" required><br>
+                <a href="#">Forget Password?</a><br>
+                <a href="dashboard.html">
+                    <input type="submit" values="Submit" id="button">
+                </a>
+            </div>
+        </div>
+    </body>
+</html>

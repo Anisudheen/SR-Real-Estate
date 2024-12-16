@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Buying Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        #search {
+            background: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #search form {
+            margin: 20px 0;
+        }
+
+        #search input, #search select {
+            margin: 5px;
+            padding: 10px;
+            width: 200px;
+        }
+
+        #search button {
+            padding: 10px 20px;
+        }
+
+        #listings {
+            padding: 20px;
+        }
+
+        .category {
+            margin-top: 40px;
+        }
+
+        .property {
+            background: white;
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+        }
+
+        .property img {
+            max-width: 300px;
+            height: auto;
+            margin: 0 20px; /* Add space between image and text */
+        }
+
+        .property-details {
+            flex: 1; /* Allow the text area to grow */
+            text-align: left;
+        }
+
+        .property-details h3 {
+            margin: 0;
+        }
+
+        .property-details p {
+            margin: 10px 0;
+        }
+
+        footer {
+            background: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer section {
+            margin: 10px 0;
+        }
+
+        /* CSS class to flip the order of flex items */
+        .reverse {
+            flex-direction: row-reverse;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Find Your Dream Home at SR Real Estate</h1>
+        <nav>
+            <ul>
+                <li><a href="#listings">Listings</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="search">
+        <h2>Search for Properties</h2>
+        <form>
+            <select required>
+                <option value="">Select Category</option>
+                <option value="apartments">Apartments</option>
+                <option value="houses">Individual Houses</option>
+                <option value="plots">Residential Plots</option>
+                <option value="commercial">Commercial Properties</option>
+            </select>
+            <input type="text" placeholder="Location" required>
+            <input type="number" placeholder="Min Price" required>
+            <input type="number" placeholder="Max Price" required>
+            <button type="submit">Search</button>
+        </form>
+    </section>
+
+    <section id="listings">
+        <h2>Property Listings</h2>
+
+        <!-- Apartments -->
+        <div class="category">
+            <h3>Apartments</h3>
+
+            <div class="property">
+                <img src="buyimage1.webp" height="300" width="300" alt="Spacious City Apartment">
+                <div class="property-details">
+                    <h3>Spacious City Apartment</h3>
+                    <p><strong>Price:</strong> RS.4,00,000</p>
+                    <p><strong>Location:</strong> Echanari,cbe</p>
+                    <p><strong>Bedrooms:</strong> 2</p>
+                    <p><strong>Bathrooms:</strong> 2</p>
+                    <p><strong>Size:</strong> 1,200 sq ft</p>
+                    <button>View Details</button>
+                </div>
+            </div>
+
+            <div class="property reverse">
+                <div class="property-details">
+                    <h3>Modern Studio Apartment</h3>
+                    <p><strong>Price:</strong> RS.3,00,000</p>
+                    <p><strong>Location:</strong> Pollachi,cbe</p>
+                    <p><strong>Bedrooms:</strong> 1</p>
+                    <p><strong>Bathrooms:</strong> 1</p>
+                    <p><strong>Size:</strong> 800 sq ft</p>
+                    <button>View Details</button>
+                </div>
+                <img src="buyimage2.jpg" height="300" width="300" alt="Modern Studio Apartment">
+            </div>
+        </div>
+
+        <!-- Individual Houses -->
+        <div class="category">
+            <h3>Individual Houses</h3>
+
+            <div class="property">
+                <img src="buyimage3.jpg" height="300" width="300" alt="Beautiful Family Home">
+                <div class="property-details">
+                    <h3>Beautiful Family Home</h3>
+                    <p><strong>Price:</strong> RS.5,00,000</p>
+                    <p><strong>Location:</strong> Mahalakshmi Nagar,Palladam</p>
+                    <p><strong>Bedrooms:</strong> 4</p>
+                    <p><strong>Bathrooms:</strong> 3</p>
+                    <p><strong>Size:</strong> 2,500 sq ft</p>
+                    <button>View Details</button>
+                </div>
+            </div>
+
+            <div class="property reverse">
+                <div class="property-details">
+                    <h3>Cozy Cottage</h3>
+                    <p><strong>Price:</strong> RS.3,50,000</p>
+                    <p><strong>Location:</strong> Avinashi,Tirupur</p>
+                    <p><strong>Bedrooms:</strong> 3</p>
+                    <p><strong>Bathrooms:</strong> 2</p>
+                    <p><strong>Size:</strong> 1,800 sq ft</p>
+                    <button>View Details</button>
+                </div>
+                <img src="buyimage4.avif" height="300" width="300" alt="Cozy Cottage">
+            </div>
+        </div>
+
+        <!-- Residential Plots -->
+        <div class="category">
+            <h3>Residential Plots</h3>
+
+            <div class="property">
+                <img src="buyimage5.webp" height="300" width="300" alt="Prime Residential Plot">
+                <div class="property-details">
+                    <h3>Prime Residential Plot</h3>
+                    <p><strong>Price:</strong> RS.2,50,000</p>
+                    <p><strong>Location:</strong> Pandian Nagar,Karaikudi</p>
+                    <p><strong>Size:</strong> 5,000 sq ft</p>
+                    <button>View Details</button>
+                </div>
+            </div>
+
+            <div class="property reverse">
+                <div class="property-details">
+                    <h3>Land for Sale</h3>
+                    <p><strong>Price:</strong> RS.3,00,000</p>
+                    <p><strong>Location:</strong> Paalkaavadiyaar street,Devakottai</p>
+                    <p><strong>Size:</strong> 10,000 sq ft</p>
+                    <button>View Details</button>
+                </div>
+                <img src="buyimage6.jpg" height="300" width="300" alt="Land for Sale">
+            </div>
+        </div>
+
+        <!-- Commercial Properties -->
+        <div class="category">
+            <h3>Commercial Properties</h3>
+
+            <div class="property">
+                <img src="buyimage7.png" height="300" width="300" alt="Office Space">
+                <div class="property-details">
+                    <h3>Office Space</h3>
+                    <p><strong>Price:</strong> RS.9,00,000</p>
+                    <p><strong>Location:</strong> Sundarapuram,Cbe</p>
+                    <p><strong>Size:</strong> 3,500 sq ft</p>
+                    <button>View Details</button>
+                </div>
+            </div>
+
+            <div class="property reverse">
+                <div class="property-details">
+                    <h3>Retail Space</h3>
+                    <p><strong>Price:</strong> RS.1,200,000</p>
+                    <p><strong>Location:</strong> Periyakaruppan street,Devakottai</p>
+                    <p><strong>Size:</strong> 4,000 sq ft</p>
+                    <button>View Details</button>
+                </div>
+                <img src="buyimage8.png" height="300" width="300" alt="Retail Space">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We help you find your dream home. Our listings feature a variety of properties across the country. Contact us for more information.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: sr@realestate.com</p>
+            <p>Phone:+91 9566493965</p>
+        </section>
+    </footer>
+</body>
+</html>
